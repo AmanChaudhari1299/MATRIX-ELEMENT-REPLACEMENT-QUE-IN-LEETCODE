@@ -1,0 +1,64 @@
+#include<stdio.h>
+int main()
+{
+    int arr[3]={1,1,1};
+    int brr[3]={1,1,0};
+    int crr[3]={1,0,1};
+    printf("REPLACE MATRIX ELEMENT'S 1 WITH 2:\n");
+    for(int i=0;i<=2;i++)
+    {
+      printf("  %d",arr[i]);
+    }
+    printf("\n");
+    for(int j=0;j<=2;j++)
+    {
+      printf("  %d",brr[j]);
+    }
+    printf("\n");
+    for(int k=0;k<=2;k++)
+    {
+      printf("  %d",crr[k]);
+    }
+    printf("\n");
+    for(int i=0;i<=2;i++)
+    {
+      if(arr[i]==1)
+      {
+          arr[i]=2;
+      }
+      else
+      {
+          i++;
+      }
+    }
+      for(int j=0;j<=2;j++)
+    {
+       if(brr[j]==1)
+       {
+           brr[j]=2;
+       } 
+    }
+      for(int k=0;k<=2;k++)
+    {
+      if(crr[k]==1)
+      {
+          crr[k]=2;
+      }
+    }
+    printf("AFTER REPLACEMENT MATRIX RESULT ARE:\n");
+    for(int i=0;i<=2;i++)
+    {
+      printf("  %d",arr[i]);
+    }
+    printf("\n");
+    for(int j=0;j<=2;j++)
+    {
+      printf("  %d",brr[j]);
+    }
+    printf("\n");
+    for(int k=0;k<=2;k++)
+    {
+      printf("  %d",crr[k]);
+    }
+    return 0;
+}
